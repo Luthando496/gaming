@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
+
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+$white:white;
+
+
+.header{
+    width: 100vw;
+    padding: 2rem 3rem;
+    background-color: black;
+
+
+    .navbar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: $white;
+        
+        
+        .img{
+            width: 5rem;
+            height: 100%;
+
+        }
+    }
+
+    .lists{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin-left: 10rem;
+        .list {
+            padding: 2rem;
+            
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            }
+        }
+
+
+    }
+
+    .profile{
+        align-self: center;
+        span{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.slider{
+    max-width:100vw;
+    overflow: hidden;
+
+    .slider-container{
+        position: relative;
+        height: 80vh;
+
+
+       
+    }
+
+    // .slider-1{
+    //     background: ;
+    // }
+
+    .single-item{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        padding-left: 3rem;
+        max-width: 30rem;
+        color: $white;
+
+        h1{
+
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .btns{
+
+
+            button{
+                padding: 1.1rem 1.3rem;
+                border: none;
+                background: rgb(66, 66, 131);
+                color: $white;
+            }
+        }
+    }
+
+    
+
+
+}
+
+
+
+
+.boxes{
+    padding-top: 1rem;
+    background-color: black;
+    padding-bottom: 4rem;
+
+
+    &-container{
+        max-width: 92vw;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: repeat(6 ,1fr);
+        gap: 0.5rem;
+
+        .box{
+            width: 90%;
+            height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+.featured{
+    background: black;
+    padding-top: 3rem;
+    padding-top: 4rem;
+    // text-align: center;
+    color: $white;
+    line-height: 1.5;
+
+
+    .content{
+        max-width: 55rem;
+        text-align: center;
+        margin: 0 auto;
+        h2{
+            font-size: 3.4rem;
+            font-weight: 100;
+            font-family: 'Roboto',sans-serif;
+        }
+    
+        h1{
+            font-size: 3.8rem;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        p{
+            font-size: 1.6rem;
+            font-weight: 300;;
+        }
+    }
+
+    .products-container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 92vw;
+        margin: 0 auto;
+        align-items: center;
+
+        .product{
+            width: 90%;
+            padding: 1rem;
+
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .content{
+                text-align: center;
+
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: lighter;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                p{
+                    font-size: 1.4rem;
+                    color: rgb(185, 184, 184);
+                    font-weight: 100;
+                    font-family: 'Roboto',sans-serif;
+                }
+
+                span{
+                    color: rgb(40, 40, 235);
+                    font-size: 1.5rem;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+
+}
+
+
+.build{
+    padding-top: 5rem;
+    background: black;
+    color: $white;
+
+    &-container{
+        max-width: 95vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .image-container{
+        }
+
+        .build-right{
+            padding: 12rem 2rem;
+
+            .build-content-1{
+                // max-width: 15rem;
+
+
+                .icons-container{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .content{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icone{
+                            color: rgb(51, 51, 236);
+                        }
+
+                        .paragraph{
+                            padding: 2rem;
+                            line-height: 1.7;
+                            
+
+                            h4{
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btns-container{
+
+
+                .next{
+                    background: rgb(14, 14, 252);
+                    padding: 1rem 1.6rem;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+                
+                .pc{
+                    padding: 1rem 2rem;
+                    background: transparent;
+                    border: 1px solid gray;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+
+            }
+
+
+            h1{
+                font-size: 7.5rem;
+                font-weight: lighter;
+                font-family: 'Josefin Slab',sans-serif;
+                text-transform: capitalize;
+            }
+
+            h2{
+                font-size: 5.5rem;
+                text-transform: uppercase;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bolder;
+            }
+
+            p{
+                font-size: 2rem;
+                color: gray;
+            }
+
+
+        }
+    }
+    
+}
+
+
+.play{
+    background: black;
+    padding-top: 7rem;
+    color: $white;
+    
+    &-content{
+        max-width: 40rem;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.4;
+
+
+        h2{
+            font-size: 3.5rem;
+            font-weight: lighter;
+            font-family: 'Josefin Slab',sans-serif;
+        }
+
+        h1{
+            font-size: 3.5rem;
+            font-weight: bolder;
+        }
+
+        p{
+            font-size: 1.4rem;
+            color: gray;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        
+    }
+
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 95vw;
+        margin: 0 auto;
+        padding: 7rem 2rem;
+
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid gray;
+            width: 100%;
+            margin: 2rem;
+            text-align: center;
+
+
+            &-header{
+                border-bottom: 1px solid gray;
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size:2rem;
+                }
+            }
+            .head-1{
+                background: linear-gradient(rgba(12,1,4,0.1)),url('./img/black-electronics-blog-1-opt.jpg');
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            
+            .head-2{
+                background: url('./img/black-electronics-testimon-1-opt.jpg');
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .head-3{
+                background: url('./img/black-electronics-blog-2-opt.jpg');
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .head-4{
+                background: url('./img/black-electronics-blog-3-opt.jpg');
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            &-columns{
+
+                .single{
+                    font-size: 1.6rem;
+                    padding: 2rem;
+                    border-bottom: 1px solid gray;
+                    width: 80%;
+                    margin: 0 auto;
+                    
+                }
+
+                .btn {
+                    padding: 3rem;
+
+                    button{
+                        font-size: 1.6rem;
+                        padding: 1rem;
+                        color: $white;
+                        background: rgb(90, 90, 228);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// GEAR
+
+.gear{
+    padding-top: 7rem;
+    background: black;
+
+    &-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-content{
+        color: white;
+    }
+}
